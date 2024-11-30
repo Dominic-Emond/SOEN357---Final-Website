@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Attendees</title>
+  <title>Socio Center</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .event-card {
@@ -27,7 +27,7 @@
   <!-- Top Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand">Title (!)</a>
+      <a class="navbar-brand" href="index.html">Socio Center</a>
       <button class="navbar-toggler" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,6 +35,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link">My Account</a></li>
           <li class="nav-item"><a class="nav-link">Friends</a></li>
+          <li class="nav-item"><a class="nav-link">My Bookings</a></li>
         </ul>
       </div>
     </div>
@@ -46,13 +47,14 @@
     <div class="row">
       <div class="col-md-8">
         <div class="card mb-4">
-          <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Event Image">
+          <img src="https://leclaireur.fnac.com/wp-content/uploads/2022/05/edmond-1024x683.jpg" width="600" height="500" class="card-img-top" alt="Event Image">
           <div class="card-body">
-            <h5 class="card-title">Event Overview</h5>
-            <p class="card-text">Lorem ipsum..</p>
-            <p><strong>Location:</strong> Location</p>
-            <p><strong>Date & Time:</strong> Date </p>
-            <p><strong>Price:</strong> $</p>
+            <h5 class="card-title">Theatre - The Singing Frog</h5>
+            <p class="card-text">⭐⭐⭐⭐ 4.2</p>
+            <p class="card-text">A charming tale of a frog who discovers a magical singing voice, captivating the local creatures while navigating the pressures of fame and self-discovery. A whimsical celebration of finding one's true voice.</p>
+            <p><strong>Location:</strong> Théâtre Maisonneuve</p>
+            <p><strong>Date & Time:</strong> December 12, 2024 </p>
+            <p><strong>Price:</strong> $55</p>
             <button class="btn btn-primary">Buy Tickets</button>
           </div>
         </div>
@@ -63,22 +65,72 @@
         <h5>Attendees</h5>
         <div class="attendee-list">
           <div class="attendee d-flex align-items-center mb-3">
-            <img src="https://via.placeholder.com/50" class="rounded-circle me-2">
-            <span>Person 1</span>
+            <img src="https://shiftart.com/wp-content/uploads/2017/04/RC-Profile-Square.jpg" width="50" height="50" class="rounded-circle me-2">
+            <span>John Doe</span>
           </div>
           <div class="attendee d-flex align-items-center mb-3">
-            <img src="https://via.placeholder.com/50" class="rounded-circle me-2">
-            <span>Person 2</span>
+            <img src="https://elireview.com/wp-content/uploads/2016/12/reed-profile-square.jpg" width="50" height="50" class="rounded-circle me-2">
+            <span>Mary Jane</span>
           </div>
           <div class="attendee d-flex align-items-center mb-3">
-            <img src="https://via.placeholder.com/50" class="rounded-circle me-2">
-            <span>Person 3</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8kiSH5ZSAcVoj3tAQQDoP_ux0sSricMyUg&s" width="50" height="50" class="rounded-circle me-2">
+            <span>Karl Simmons</span>
           </div>
         </div>
-        <button class="btn btn-outline-primary" data-bs-toggle="modal">Add Friends</button>
       </div>
     </div>
   </div>
+
+  <!-- Forum -->
+<div class="container my-5">
+  <!-- Post List -->
+  <div class="post mb-4 p-3 border rounded">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5>Comments</h5>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="comments mt-3">     
+      <!-- Comment 1 -->
+      <div class="comment mb-3 p-3 border rounded">
+        <div class="d-flex justify-content-between">
+          <div><strong>John Doe</strong></div>
+          <div><small>1 hour ago</small></div>
+        </div>
+        <p>This is a great event! Highly Recommend!</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="vote-buttons">
+            <button class="btn btn-sm btn-outline-success me-2">↑</button>
+            <button class="btn btn-sm btn-outline-danger">↓</button>
+          </div>
+          <button class="btn btn-sm btn-outline-info">Reply</button>
+        </div>
+      </div>
+      
+      <!-- Comment 2 -->
+      <div class="comment mb-3 p-3 border rounded">
+        <div class="d-flex justify-content-between">
+          <div><strong>Mary Jane</strong></div>
+          <div><small>2 hours ago</small></div>
+        </div>
+        <p>Not a big fan. Too noisy.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="vote-buttons">
+            <button class="btn btn-sm btn-outline-success me-2">↑</button>
+            <button class="btn btn-sm btn-outline-danger">↓</button>
+          </div>
+          <button class="btn btn-sm btn-outline-info">Reply</button>
+        </div>
+      </div>
+
+      <!-- Add Comment Form -->
+      <div class="add-comment mt-4">
+        <textarea class="form-control" rows="3" placeholder="Add a comment"></textarea>
+        <button class="btn btn-primary mt-2">Post Comment</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
