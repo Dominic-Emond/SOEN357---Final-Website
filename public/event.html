@@ -33,9 +33,9 @@
       </button>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link">My Account</a></li>
+          <li class="nav-item"><a class="nav-link" href="search.html">My Account</a></li>
           <li class="nav-item"><a class="nav-link">Friends</a></li>
-          <li class="nav-item"><a class="nav-link">My Bookings</a></li>
+          <li class="nav-item"><a class="nav-link" href="myBookings.html">My Bookings</a></li>
         </ul>
       </div>
     </div>
@@ -63,18 +63,29 @@
       <!-- Attendees Section -->
       <div class="col-md-4">
         <h5>Attendees</h5>
-        <div class="attendee-list">
-          <div class="attendee d-flex align-items-center mb-3">
-            <img src="https://shiftart.com/wp-content/uploads/2017/04/RC-Profile-Square.jpg" width="50" height="50" class="rounded-circle me-2">
-            <span>John Doe</span>
+        <div class="attendee-list row">
+          <div class="col">
+            <div class="attendee d-flex align-items-center mb-3">
+              <img src="https://shiftart.com/wp-content/uploads/2017/04/RC-Profile-Square.jpg" width="50" height="50" class="rounded-circle me-2">
+              <span>John Doe</span>
+              <div class="ms-2">
+                <button class="btn btn-outline-primary" data-bs-toggle="modal">Add Friend</button>
+              </div>
+            </div>
           </div>
           <div class="attendee d-flex align-items-center mb-3">
             <img src="https://elireview.com/wp-content/uploads/2016/12/reed-profile-square.jpg" width="50" height="50" class="rounded-circle me-2">
             <span>Mary Jane</span>
+            <div class="ms-2">
+              <button class="btn btn-outline-primary" data-bs-toggle="modal">Add Friend</button>
+            </div>
           </div>
           <div class="attendee d-flex align-items-center mb-3">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8kiSH5ZSAcVoj3tAQQDoP_ux0sSricMyUg&s" width="50" height="50" class="rounded-circle me-2">
             <span>Karl Simmons</span>
+            <div class="ms-2">
+              <button class="btn btn-outline-primary" data-bs-toggle="modal">Add Friend</button>
+            </div>
           </div>
         </div>
       </div>

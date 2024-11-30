@@ -12,6 +12,18 @@ app.get('/', (req, res) => {
   app.get('/event', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'event.html'));
   })
+
+  app.get('/myBooking', (req, res) => {
+    res.sendFile(path.join(dirname, 'public', 'myBookings.html'));
+  })
+
+  app.get('/refund', (req, res) => {
+    res.sendFile(path.join(dirname, 'public', 'refund.html'));
+  })
+
+  app.get('/schedule', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'schedule.html'));
+  })
   
   app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

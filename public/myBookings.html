@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Attendees</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .event-card {
+      transition: transform 0.2s;
+    }
+    .event-card:hover {
+      transform: scale(1.02);
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x400') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Socio Center</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="search.html">My Account</a></li>
+          <li class="nav-item"><a class="nav-link">Friends</a></li>
+          <li class="nav-item"><a class="nav-link" href="myBookings.html">My Bookings</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Event Details Section -->
+    <div class="container my-5">
+        <h2 class="text-left mb-2">Event Details</h2>
+        <div class="row">
+        <div class="col-md-9">
+            <div class="card mb-4 mx-auto">
+            <img src="https://leclaireur.fnac.com/wp-content/uploads/2022/05/edmond-1024x683.jpg" class="card-img-top" alt="Event Image" style="height: 400px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Theatre - The Singing Frog</h5>
+                <p class="card-text">A charming tale of a frog who discovers a magical singing voice, captivating the local creatures while navigating the pressures of fame and self-discovery. A whimsical celebration of finding one's true voice.</p>
+                <p><strong>Location:</strong> Théâtre Maisonneuve</p>
+                <p><strong>Date & Time:</strong> December 12, 2024 </p>
+                <a class="btn btn-primary" href="event.html">Event Information</a>
+                <a class="btn btn-primary" href="refund.html">Request a refund</a>
+                <a class="btn btn-primary" href="schedule.html">Schedule Builder</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+        <div class="col-md-9">
+            <div class="card mb-4 mx-auto">
+            <img src="https://casinos.lotoquebec.com/.imaging/mte/casinos-theme/retinaLrg-1920w/website/casinos/montreal/restaurants/le-montreal/image/LeMontreal_headerweb.jpg" class="card-img-top" alt="Event Image" style="height: 400px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Restaurant - Tapas Central</h5>
+                <p class="card-text">Fun Tapas Restaurant</p>
+                <p><strong>Location:</strong> Le Central</p>
+                <p><strong>Date & Time:</strong> December 19, 2024 </p>
+                <a class="btn btn-primary" href="event.html">Event Information</a>
+                <a class="btn btn-primary" href="refund.html">Request a refund</a>
+                <a class="btn btn-primary" href="schedule.html">Schedule Builder</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
